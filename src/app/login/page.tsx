@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button"
 import {
     Card,
     CardContent,
-    CardDescription,
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
@@ -43,7 +42,7 @@ export default function Login() {
                 setCookie("token", token)
                 router.push("/")
             }
-        } catch (error) {
+        } catch {
             toast("Invalid credentials. Try again.")
         } finally {
             reset()
