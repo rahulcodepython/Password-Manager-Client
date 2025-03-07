@@ -1,3 +1,8 @@
-**/node_modules
-**/build
-**/.next
+# **/node_modules
+# **/build
+# **/.next
+# .git
+# .gitignore
+# README.md
+# dockerfile
+# docker-comopse.yml

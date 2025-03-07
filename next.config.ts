@@ -2,9 +2,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
     /* config options here */
+    output: "standalone",
     env: {
-        API_URL: 'http://backend:8000/api/v2/',
-    },
+        API_URL: process.env.API_URL
+    }
 };
 
 export default nextConfig;
